@@ -73,6 +73,12 @@ To explore the dashboard:
 2. Open using Power BI Desktop (free version)
 3. Interact with filters and dynamic KPI selector
 
+--
+
+## 🎥 Interactive Walkthrough
+
+If required, I am happy to provide a live demonstration of the dashboard.
+
 ---
 
 ## 👤 Author
@@ -82,6 +88,7 @@ Data Analyst | Based in Australia 🇦🇺
 Work & Holiday Visa  
 
 LinkedIn: www.linkedin.com/in/pedro-gabriel-anzei-1a212a195
+
 
 
 
