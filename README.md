@@ -50,7 +50,7 @@ Passionate about data-driven decision-making and continuous learning. Based in A
 1. **Australia Performance Analytics Dashboard (2018–2023)** — Analytical Power BI solution designed to demonstrate data modelling, DAX measure creation and interactive reporting using Australian public datasets. Includes dynamic KPI selector and geographic insights by state/territory.
 Stack: Power BI (DAX, Data Modelling, Power Query), Star Schema.
 
-Links: [Repo] · [PBIX] · [Screenshots]
+  Links: [Repo] · [PBIX] · [Screenshots]
 
 > I can provide sanitized datasets where needed and host interactive dashboards upon request.
 
