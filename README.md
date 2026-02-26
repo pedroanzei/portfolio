@@ -15,7 +15,9 @@ Open to remote work and relocation to Australia
 ---
 
 ## About Me
-Senior Data & BI Analyst with a track record of translating business questions into measurable outcomes. I design and deliver analytical solutions that combine strong SQL, Python and Power BI with clear stakeholder communication. My focus is to help executives and product teams make faster, better decisions through trustworthy data, compelling visuals and concise narratives. I’ve led end‑to‑end initiatives — from data modeling and ETL to KPI frameworks and executive dashboards — mentoring analysts and collaborating across Finance, Sales, Marketing and Operations.
+Data Analyst specialised in SQL, data modelling and business intelligence. Experienced in building dashboards, developing complex queries and transforming raw data into structured analytical solutions.
+
+Passionate about data-driven decision-making and continuous learning. Based in Australia 🇦🇺 | Work & Holiday Visa.
 
 **Focus areas:** BI strategy, KPI design, revenue and margin analytics, customer lifecycle, executive reporting, experimentation, and forecasting fundamentals.
 
@@ -30,38 +32,24 @@ Senior Data & BI Analyst with a track record of translating business questions i
 ![Git](https://img.shields.io/badge/Git-Professional-informational?logo=git)&nbsp;
 ![AWS](https://img.shields.io/badge/AWS-Basic--to--Intermediate-informational?logo=amazonaws)
 
-**Toolbox:** DAX, Power Query (M), PostgreSQL/MySQL, dbt basics, Jupyter, Excel for executives, A/B test readouts, cohort analysis, segmentation, churn analysis.
+**Toolbox:** DAX, Power Query (M), PostgreSQL/MySQL, dbt basics, Jupyter, Excel for executives, churn analysis.
 
 ---
 
 ## Selected Impact (highlights)
 - Built executive KPIs and dashboards adopted at C‑level, improving decision cadence and transparency across Sales and Finance.
 - Reduced reporting time from days to hours by re‑platforming legacy spreadsheets into a governed BI model (Power BI + SQL).
-- Delivered churn and retention analysis with clear actions for Marketing and CX, informing targeting and lifecycle messaging.
 - Mentored analysts and standardized project templates (problem → data → method → insight → action), improving consistency and speed.
 
-> Sectors experienced: financial services, e‑commerce, product, and operations analytics.
+> Sectors experienced: financial services, product, and operations analytics.
 
 ---
 
 ## Portfolio Projects
-> Full case write‑ups with code, queries and dashboards. Each project follows a business‑first structure: **Problem → Data → Approach → Insights → Actions**.
 
-1. **SQL Business Insights Case** — revenue, margin, cohorts, and funnel analytics on a relational dataset.  
-   _Stack:_ PostgreSQL/MySQL, window functions, CTEs, performance tuning.  
-   _Links:_ `[Repo]` · `[Key Queries]` · `[Data Model]`
-
-2. **Python Data Cleaning & EDA** — from raw CSV to clean dataset and insights; feature engineering and data quality checks.  
-   _Stack:_ Python, Pandas, Jupyter, matplotlib/plotly.  
-   _Links:_ `[Repo]` · `[Notebook]` · `[Report]`
-
-3. **Executive Power BI Dashboard** — board‑level view for Revenue, Profitability, and Customer metrics with drill‑downs.  
-   _Stack:_ Power BI (DAX, Power Query), star schema.  
-   _Links:_ `[Repo]` · `[PBIX]` · `[Screenshots]`
-
-4. **End‑to‑End BI Case** — mini data pipeline (ETL) + SQL model + Python analysis + Power BI dashboard.  
-   _Stack:_ Python (ETL), SQL, Power BI; optional cloud bucket.  
-   _Links:_ `[Repo]` · `[Architecture]` · `[Demo]`
+1. **Australia Performance Analytics Dashboard (2018–2023)** — Analytical Power BI solution designed to demonstrate data modelling, DAX measure creation and interactive reporting using Australian public datasets. Includes dynamic KPI selector and geographic insights by state/territory.
+Stack: Power BI (DAX, Data Modelling, Power Query), Star Schema.
+Links: [Repo] · [PBIX] · [Screenshots]
 
 > I can provide sanitized datasets where needed and host interactive dashboards upon request.
 
@@ -75,8 +63,6 @@ Senior Data & BI Analyst with a track record of translating business questions i
 ---
 
 ## Currently Working On
-- Publishing a BI template repo with reusable **KPI framework** (revenue, margin, CAC, LTV, retention).  
-- A short **case study series**: 5‑minute reads for executives showing the “so what” behind the charts.  
 - Migrating legacy Excel reports into a governed **Power BI semantic model**.
 
 ---
@@ -85,4 +71,4 @@ Senior Data & BI Analyst with a track record of translating business questions i
 - LinkedIn: **[www.linkedin.com/in/pedro-gabriel-anzei-1a212a195](https://www.linkedin.com/in/pedro-gabriel-anzei-1a212a195)**  
 - Email: **anzeipedrogabriel@gmail.com**
 
-_<sub>Last updated: 2025-10-23</sub>_
+_<sub>Last updated: 2026-02-26</sub>_
