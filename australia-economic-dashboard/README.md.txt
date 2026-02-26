@@ -16,6 +16,16 @@ The objective of this dashboard is to demonstrate advanced data modelling, DAX m
 - Enable year-based interactive filtering (2018–2023)
 - Apply best practices in dashboard design and data storytelling
 
+--
+
+## 🧠 Data Model Overview
+
+The dashboard follows a star schema structure with:
+
+- Fact table containing yearly economic indicators
+- Dimension tables for Date and State
+- Optimised relationships to support dynamic filtering
+
 ---
 
 ## 🔎 Key Analytical Features
@@ -52,6 +62,8 @@ The objective of this dashboard is to demonstrate advanced data modelling, DAX m
 - Data Visualisation Design
 - Stakeholder-Oriented Dashboard Structure
 
+--
+
 ## 📂 Accessing the Project
 
 The Power BI (.pbix) file is available in this repository for download.
@@ -70,5 +82,6 @@ Data Analyst | Based in Australia 🇦🇺
 Work & Holiday Visa  
 
 LinkedIn: www.linkedin.com/in/pedro-gabriel-anzei-1a212a195
+
 
 
