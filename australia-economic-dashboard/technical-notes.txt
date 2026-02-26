@@ -1,0 +1,162 @@
+
+Australia Economic & Demographic Dashboard (2018–2023)
+Technical Notes – Advanced Version
+
+=====================================================
+1. Data Model Architecture
+=====================================================
+
+The report was designed using a Star Schema data model to optimise performance,
+clarify filter propagation and ensure scalability.
+
+FACT TABLE:
+- Fact_EconomicIndicators
+  - Year
+  - State/Territory
+  - GDP
+  - Population
+  - Derived economic metrics
+
+DIMENSION TABLES:
+- Dim_Date (Year granularity)
+- Dim_State (State/Territory attributes)
+
+Relationships:
+- Dim_Date (1) -> Fact_EconomicIndicators (Many)
+- Dim_State (1) -> Fact_EconomicIndicators (Many)
+- Single-direction filtering applied from dimensions to fact table
+
+No bidirectional relationships were used to avoid ambiguity and performance degradation.
+
+=====================================================
+2. Field Parameter Implementation
+=====================================================
+
+A Field Parameter was implemented to dynamically switch between multiple measures
+without duplicating visuals.
+
+Parameter Structure:
+- Parameter Table created via Power BI Field Parameters feature
+- Each entry references a measure using NAMEOF()
+
+Example structure conceptually:
+
+Parameter = {
+    ("GDP", NAMEOF([Total GDP]), 0),
+    ("Population", NAMEOF([Total Population]), 1),
+    ("Growth", NAMEOF([Growth Rate]), 2)
+}
+
+The parameter is used:
+- As slicer input
+- As visual value selector
+- As conditional formatting driver
+
+This allows a single Filled Map visual to dynamically update based on selected KPI.
+
+=====================================================
+3. DAX Measures Design
+=====================================================
+
+All calculations were implemented as explicit measures.
+
+Examples of measure patterns used:
+
+Total GDP =
+SUM(Fact_EconomicIndicators[GDP])
+
+Total Population =
+SUM(Fact_EconomicIndicators[Population])
+
+Selected KPI Value =
+SELECTEDMEASURE()
+
+Where required, context-preserving functions were applied to ensure correct
+aggregation under Year and State filter context.
+
+Measures were prioritised over calculated columns to:
+- Reduce memory footprint
+- Improve performance
+- Maintain logical separation between model and calculation layer
+
+=====================================================
+4. Geographic Configuration
+=====================================================
+
+The Filled Map visual was configured with:
+
+- Location: State/Territory (Data Category set appropriately)
+- Values: Selected KPI (Field Parameter-driven)
+- Conditional color scale based on selected measure
+
+Cross-filtering enabled:
+- Year slicer filters map
+- KPI selector updates value expression
+- Map interactions filter other visuals
+
+=====================================================
+5. Filter Context Management
+=====================================================
+
+Filter propagation controlled through:
+
+- Star schema modelling
+- Single-direction relationships
+- Explicit measure context handling
+
+Year slicer (2018–2023) applies global filter context.
+State selection dynamically modifies aggregation level.
+
+SELECTEDVALUE() logic used where necessary to ensure dynamic behaviour consistency.
+
+=====================================================
+6. Performance Optimisation
+=====================================================
+
+Performance considerations included:
+
+- Data cleaning and shaping performed in Power Query
+- Removal of unnecessary columns before load
+- Avoidance of complex row-level calculated columns
+- Measure-based dynamic logic
+- Optimised relationship structure
+
+=====================================================
+7. Report Design Considerations
+=====================================================
+
+The layout was structured following professional analytics standards:
+
+- Clear visual hierarchy
+- Reduced visual clutter
+- Minimalistic colour scheme
+- Focus on KPI-driven geographic storytelling
+
+The design supports executive-level readability while maintaining analytical depth.
+
+=====================================================
+8. Future Technical Enhancements
+=====================================================
+
+Potential upgrades include:
+
+- Time Intelligence (YoY, MoM)
+- RANKX-based state ranking
+- Tooltip report pages
+- Drill-through pages by State
+- Benchmark comparison measures
+
+=====================================================
+Technical Skills Demonstrated
+=====================================================
+
+- Star Schema Data Modelling
+- Advanced DAX (Measures, Context Handling)
+- Field Parameters Implementation
+- SELECTEDMEASURE() Logic
+- Power Query Transformations
+- Performance-Oriented BI Design
+
+Author:
+Pedro Gabriel Anzei
+Data Analyst | Based in Australia
